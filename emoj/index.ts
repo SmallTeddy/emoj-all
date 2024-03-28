@@ -256,5 +256,46 @@ export const emojItems: ItemType[] = [
         ]
       }
     ]
+  },
+  {
+    name: '人物与身体的表情符号',
+    children: [
+      {
+        name: '手与手指展开',
+        children: [
+          { emoj: '👋', name: '挥手' },
+          { emoj: '👋🏻', name: '挥手 浅肤色' },
+          { emoj: '👋🏼', name: '挥手 中浅肤色' },
+          { emoj: '👋🏽', name: '挥手 中等肤色' },
+          { emoj: '👋🏾', name: '挥手 中黑肤色' },
+          { emoj: '👋🏿', name: '挥手 深色肤色' },
+          { emoj: '🤚', name: '举起手背' },
+          { emoj: '🤚🏻', name: '举起手背 浅肤色' },
+          { emoj: '🤚🏼', name: '举起手背 中浅肤色' },
+          { emoj: '🤚🏽', name: '举起手背 中等肤色' },
+          { emoj: '🤚🏾', name: '举起手背 中黑肤色' },
+          { emoj: '🤚🏿', name: '举起手背 深色肤色' },
+          { emoj: '🖐', name: '手指张开的手' },
+          { emoj: '🖐🏻', name: '手指张开的手 浅肤色' },
+          { emoj: '🖐🏼', name: '手指张开的手 中浅肤色' },
+          { emoj: '🖐🏽', name: '手指张开的手 中等肤色' },
+          { emoj: '🖐🏾', name: '手指张开的手 中黑肤色' },
+          { emoj: '🖐🏿', name: '手指张开的手 深色肤色' },
+          { emoj: '✋', name: '举起手' },
+          { emoj: '✋🏻', name: '举起手 浅肤色' },
+          { emoj: '✋🏼', name: '举起手 中浅肤色' },
+          { emoj: '✋🏽', name: '举起手 中等肤色' },
+          { emoj: '✋🏾', name: '举起手 中黑肤色' },
+          { emoj: '✋🏿', name: '举起手 深色肤色' },
+          { emoj: '🖖', name: '瓦肯敬礼' },
+          { emoj: '🖖🏻', name: '瓦肯敬礼 浅肤色' },
+          { emoj: '🖖🏼', name: '瓦肯敬礼 中浅肤色' },
+          { emoj: '🖖🏽', name: '瓦肯敬礼 中等肤色' },
+          { emoj: '🖖🏾', name: '瓦肯敬礼 中黑肤色' },
+          { emoj: '🖖🏿', name: '瓦肯敬礼 深色肤色' },
+          { emoj: '🫱', name: '右手' },
+        ]
+      }
+    ]
   }
 ]
