@@ -233,5 +233,23 @@ export const emojItems: ItemType[] = [
       { emoj: '🩶', name: '灰色的心' },
       { emoj: '🤍', name: '白心' },
     ]
+  },
+  {
+    name: '情感',
+    children: [
+      { emoj: '💋', name: '吻痕' },
+      { emoj: '💯', name: '百分' },
+      { emoj: '💢', name: '愤怒的象征' },
+      { emoj: '💥', name: '碰撞' },
+      { emoj: '💦', name: '汗滴' },
+      { emoj: '💨', name: '匆匆而去' },
+      { emoj: '🕳️', name: '洞' },
+      { emoj: '💬', name: '语音气球' },
+      { emoj: '👁️‍🗨️', name: '讲话泡泡中的眼睛' },
+      { emoj: '🗨️', name: '左边的语音气泡' },
+      { emoj: '🗯️', name: '右愤怒泡沫' },
+      { emoj: '💭', name: '思想气球' },
+      { emoj: '💤', name: 'ZZZ' },
+    ]
   }
 ]
