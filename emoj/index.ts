@@ -1,6 +1,6 @@
 import { ItemType } from '../interface';
 
-export const emojItems: any[] = [
+export const emojItems: ItemType[] = [
   {
     name: '脸与微笑', children: [
       { name: '笑脸', emoj: '😀' },
@@ -18,8 +18,21 @@ export const emojItems: any[] = [
       { name: '微笑的脸和微笑的眼睛', emoj: '😊' },
       { name: '带光环的笑脸', emoj: '😇' },
     ]
-  }
+  },
+  { name: '脸与情感', children: [
+    { name: '笑脸与心', emoj: '🥰' },
+    { name: '心形眼睛的笑脸', emoj: '😍' },
+    { name: '追星的', emoj: '🤩' },
+    { name: '脸飞吻', emoj: '😘' },
+    { name: '亲吻脸', emoj: '😗' },
+    { name: '微笑的面孔', emoj: '☺️' },
+    { name: '微笑的面孔', emoj: '☺' },
+    { name: '闭着眼睛亲吻脸', emoj: '😚' },
+    { name: '带着微笑的眼睛亲吻脸', emoj: '😙' },
+    { name: '含着泪水的笑脸', emoj: '🥲' },
+  ]}
 ]
+
 
 
 

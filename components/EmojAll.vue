@@ -57,6 +57,7 @@ watch(
 
 <style scoped>
 .layout {
+  background: #333;
   width: 600px;
   height: 100vh;
   position: relative;
@@ -68,7 +69,7 @@ watch(
 .emoj-table {
   box-sizing: border-box;
   width: 100%;
-  border: 1px solid #ccc;
+  border-bottom: 1px solid #141414;
 }
 
 .emoj-table-title {
@@ -81,7 +82,12 @@ watch(
 }
 
 .emoj-table-item span {
+  padding: 0 4px;
   font-size: 24px;
+}
+
+.emoj-table-item span:hover {
+  box-shadow: 0px 0px 12px #141414;
 }
 
 .search-box {
@@ -91,7 +97,6 @@ watch(
   background: #fff;
   width: 100%;
   height: 32px;
-  padding-top: 8px;
   padding-bottom: 1px;
 }
 
@@ -100,14 +105,14 @@ watch(
   margin: 0;
   padding: 0;
   height: 32px;
-  border: 1px solid #ccc;
+  border: 1px solid #333;
   border-radius: 0;
 }
 
 .search-box input:focus-visible {
   padding-left: 4px;
   font-size: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #333;
   border-radius: 0 !important;
   outline: none;
 }
