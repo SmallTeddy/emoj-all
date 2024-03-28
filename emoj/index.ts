@@ -1199,5 +1199,79 @@ export const emojItems: ItemType[] = [
         ]
       }
     ]
+  },
+  {
+    name: '旅行与地点的表情符号',
+    children: [
+      {
+        name: '地点与地图',
+        children: [
+          { "emoj": "🌍", "name": "显示欧洲-非洲的地球仪" },
+          { "emoj": "🌎", "name": "显示美洲的地球仪" },
+          { "emoj": "🌏", "name": "显示亚洲-澳大利亚的地球仪" },
+          { "emoj": "🌐", "name": "有经络的地球仪" },
+          { "emoj": "🗺️", "name": "世界地图" },
+          { "emoj": "🗾", "name": "日本地图" },
+          { "emoj": "🧭", "name": "罗盘" }
+        ]
+      },
+      {
+        name: '地理位置',
+        children:[
+          { "emoj": "🏔️", "name": "雪山" },
+          { "emoj": "⛰️", "name": "山" },
+          { "emoj": "🌋", "name": "火山" },
+          { "emoj": "🗻", "name": "富士山" },
+          { "emoj": "🏕️", "name": "野营" },
+          { "emoj": "🏖️", "name": "带伞的海滩" },
+          { "emoj": "🏜️", "name": "沙漠" },
+          { "emoj": "🏝️", "name": "沙漠荒岛" },
+          { "emoj": "🏞️", "name": "国家公园" }
+        ]
+      },
+      {
+        name: '建筑物',
+        children: [
+          { "emoj": "🏟️", "name": "体育场" },
+          { "emoj": "🏛️", "name": "古典建筑" },
+          { "emoj": "🏗️", "name": "建筑施工" },
+          { "emoj": "🧱", "name": "砖" },
+          { "emoj": "🪨", "name": "岩石" },
+          { "emoj": "🪵", "name": "木头" },
+          { "emoj": "🛖", "name": "小屋" },
+          { "emoj": "🏘️", "name": "房屋" },
+          { "emoj": "🏚️", "name": "废弃的房子" },
+          { "emoj": "🏠", "name": "房子" },
+          { "emoj": "🏡", "name": "带花园的房子" },
+          { "emoj": "🏢", "name": "办公楼" },
+          { "emoj": "🏣", "name": "日本邮局" },
+          { "emoj": "🏤", "name": "邮局" },
+          { "emoj": "🏥", "name": "医院" },
+          { "emoj": "🏦", "name": "银行" },
+          { "emoj": "🏨", "name": "酒店" },
+          { "emoj": "🏩", "name": "爱情酒店" },
+          { "emoj": "🏪", "name": "便利店" },
+          { "emoj": "🏫", "name": "学校" },
+          { "emoj": "🏬", "name": "百货商店" },
+          { "emoj": "🏭", "name": "工厂" },
+          { "emoj": "🏯", "name": "日本城堡" },
+          { "emoj": "🏰", "name": "城堡" },
+          { "emoj": "💒", "name": "婚礼" },
+          { "emoj": "🗼", "name": "东京塔" },
+          { "emoj": "🗽", "name": "自由女神像" }
+        ]
+      },
+      {
+        name: '宗教建筑',
+        children: [
+          { "emoj": "⛪", "name": "教会" },
+          { "emoj": "🕌", "name": "清真寺" },
+          { "emoj": "🛕", "name": "印度教寺庙" },
+          { "emoj": "🕍", "name": "犹太教堂" },
+          { "emoj": "⛩️", "name": "神社" },
+          { "emoj": "🕋", "name": "天房" }
+        ]
+      }
+    ]
   }
 ]
