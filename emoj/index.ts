@@ -295,6 +295,43 @@ export const emojItems: ItemType[] = [
           { emoj: '🖖🏿', name: '瓦肯敬礼 深色肤色' },
           { emoj: '🫱', name: '右手' },
         ]
+      },
+      {
+        name: '手与部分手指',
+        children: [
+          { emoj: '👌', name: '好的手' },
+          { emoj: '👌🏻', name: '好的手 浅肤色' },
+          { emoj: '👌🏼', name: '好的手 中浅肤色' },
+          { emoj: '👌🏽', name: '好的手 中等肤色' },
+          { emoj: '👌🏾', name: '好的手 中黑肤色' },
+          { emoj: '👌🏿', name: '好的手 深色肤色' },
+          { emoj: '🤌', name: '捏手指' },
+          { emoj: '🤌🏻', name: '捏手指 浅肤色' },
+          { emoj: '🤌🏼', name: '捏手指 中浅肤色' },
+          { emoj: '🤌🏽', name: '捏手指 中等肤色' },
+          { emoj: '🤌🏾', name: '捏手指 中黑肤色' },
+          { emoj: '🤌🏿', name: '捏手指 深色肤色' },
+          { emoj: '🤏', name: '捏手' },
+          { emoj: '🤏🏻', name: '捏手 浅肤色' },
+          { emoj: '🤏🏼', name: '捏手 中浅肤色' },
+          { emoj: '🤏🏽', name: '捏手 中等肤色' },
+          { emoj: '🤏🏾', name: '捏手 中黑肤色' },
+          { emoj: '🤏🏿', name: '捏手 深色肤色' },
+          { emoj: '✌️', name: '胜利之手' },
+          { emoj: '✌', name: '胜利之手' },
+          { emoj: '✌🏻', name: '胜利之手 浅肤色' },
+          { emoj: '✌🏼', name: '胜利之手 中浅肤色' },
+          { emoj: '✌🏽', name: '胜利之手 中等肤色' },
+          { emoj: '✌🏾', name: '胜利之手 中黑肤色' },
+          { emoj: '✌🏿', name: '胜利之手 深色肤色' },
+          { emoj: '🤞', name: '交叉手指' },
+          { emoj: '🤞🏻', name: '交叉手指 浅肤色' },
+          { emoj: '🤞🏼', name: '交叉手指 中浅肤色' },
+          { emoj: '🤞🏽', name: '交叉手指 中等肤色' },
+          { emoj: '🤞🏾', name: '交叉手指 中黑肤色' },
+          { emoj: '🤞🏿', name: '交叉手指 深色肤色' },
+          { emoj: '🫰', name: '食指和拇指交叉的手' },
+        ]
       }
     ]
   }
