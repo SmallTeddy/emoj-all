@@ -1217,7 +1217,7 @@ export const emojItems: ItemType[] = [
       },
       {
         name: '地理位置',
-        children:[
+        children: [
           { "emoj": "🏔️", "name": "雪山" },
           { "emoj": "⛰️", "name": "山" },
           { "emoj": "🌋", "name": "火山" },
@@ -1271,6 +1271,10 @@ export const emojItems: ItemType[] = [
           { "emoj": "⛩️", "name": "神社" },
           { "emoj": "🕋", "name": "天房" }
         ]
+      },
+      {
+        name: '其他地点',
+        children: []
       }
     ]
   }
