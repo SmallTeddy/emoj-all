@@ -17,13 +17,26 @@ const itemClick = (item: ItemType) => {
 const keyWords = ref('')
 const searchByKeyWords = (keyWords: string) => {
   emojAllItems.value = resetItems()
-  const contents: ItemType[] = emojAllItems.value.map((tabs: ItemType) => {
-    return tabs.children?.map((types: ItemType) => {
-      return types.children?.filter((item: ItemType) => item.name.includes(keyWords))
-    })
-  })
-  // emojAllItems.value = contents
-  console.log(contents)
+  const results: ItemType[] = [];
+  const searchEmojis = (items: ItemType[]) => {
+    items.forEach((item) => {
+      if (item.name.includes(keyWords)) {
+        results.push(item);
+      }
+      if (item.children && item.children.length > 0) {
+        searchEmojis(item.children);
+      }
+    });
+  };
+  searchEmojis(emojAllItems.value);
+  emojAllItems.value = [
+    {
+      name: '',
+      children: [
+        { name: '筛选结果', children: results }
+      ]
+    }
+  ]
 }
 
 watch(
@@ -46,11 +59,11 @@ watch(
     <div class="flex-column">
       <div v-for="tabs in emojAllItems" :key="tabs.name" class="emoj-tabs">
         <h3 class="emoj-tabs-title" v-if="tabs.children?.length > 0">{{ tabs.name }}</h3>
-        <div v-if="tabs.children?.length > 0" v-for="item in tabs.children" :key="item.name" class="emoj-table">
+        <div v-for="item in tabs.children" :key="item.name" class="emoj-table">
           <h3 class="emoj-table-title" v-if="item.children?.length > 0">{{ item.name }}</h3>
           <div class="emoj-table-item">
-            <span v-if="item.children?.length > 0" v-for="emojItem in item.children" :key="emojItem.name">
-              {{  emojItem.emoj }}
+            <span v-for="emojItem in item.children" :key="emojItem.name">
+              {{ emojItem.emoj }}
             </span>
           </div>
         </div>
