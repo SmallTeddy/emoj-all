@@ -944,6 +944,83 @@ export const emojItems: ItemType[] = [
           { "emoj": "🦕", "name": "蜥脚类动物" },
           { "emoj": "🦖", "name": "霸王龙" }
         ]
+      },
+      {
+        name: '海洋动物',
+        children: [
+          { "emoj": "🐳", "name": "喷水鲸" },
+          { "emoj": "🐋", "name": "鲸" },
+          { "emoj": "🐬", "name": "海豚" },
+          { "emoj": "🦭", "name": "海豹" },
+          { "emoj": "🐟", "name": "鱼" },
+          { "emoj": "🐠", "name": "热带鱼" },
+          { "emoj": "🐡", "name": "河豚鱼" },
+          { "emoj": "🦈", "name": "鲨鱼" },
+          { "emoj": "🐙", "name": "章鱼" },
+          { "emoj": "🐚", "name": "螺" },
+          { "emoj": "🪸", "name": "珊瑚" },
+          { "emoj": "🪼", "name": "海蜇" }
+        ]
+      },
+      {
+        name: '昆虫',
+        children: [
+          { "emoj": "🐌", "name": "蜗牛" },
+          { "emoj": "🦋", "name": "蝴蝶" },
+          { "emoj": "🐛", "name": "漏洞" },
+          { "emoj": "🐜", "name": "蚂蚁" },
+          { "emoj": "🐝", "name": "蜜蜂" },
+          { "emoj": "🪲", "name": "甲虫" },
+          { "emoj": "🐞", "name": "瓢虫" },
+          { "emoj": "🦗", "name": "蟋蟀" },
+          { "emoj": "🪳", "name": "蟑螂" },
+          { "emoj": "🕷️", "name": "蜘蛛" },
+          { "emoj": "🕸️", "name": "蜘蛛网" },
+          { "emoj": "🦂", "name": "蝎" },
+          { "emoj": "🦟", "name": "蚊子" },
+          { "emoj": "🪰", "name": "飞" },
+          { "emoj": "🪱", "name": "虫" },
+          { "emoj": "🦠", "name": "微生物" }
+        ]
+      },
+      {
+        name: '植物与花朵',
+        children: [
+          { "emoj": "💐", "name": "花束" },
+          { "emoj": "🌸", "name": "樱花" },
+          { "emoj": "💮", "name": "白色的花" },
+          { "emoj": "🪷", "name": "莲花" },
+          { "emoj": "🏵️", "name": "玫瑰花结" },
+          { "emoj": "🌹", "name": "玫瑰" },
+          { "emoj": "🥀", "name": "枯萎的花" },
+          { "emoj": "🌺", "name": "芙蓉" },
+          { "emoj": "🌻", "name": "向日葵" },
+          { "emoj": "🌼", "name": "开花" },
+          { "emoj": "🌷", "name": "郁金香" },
+          { "emoj": "🪻", "name": "风信子" }
+        ]
+      },
+      {
+        name: '植物与其他',
+        children: [
+          { "emoj": "🌱", "name": "幼苗" },
+          { "emoj": "🪴", "name": "盆栽" },
+          { "emoj": "🌲", "name": "常青树" },
+          { "emoj": "🌳", "name": "落叶树" },
+          { "emoj": "🌴", "name": "棕榈树" },
+          { "emoj": "🌵", "name": "仙人掌" },
+          { "emoj": "🌾", "name": "一捆米饭" },
+          { "emoj": "🌿", "name": "草本植物" },
+          { "emoj": "☘️", "name": "三叶草" },
+          { "emoj": "☘", "name": "三叶草" },
+          { "emoj": "🍀", "name": "四叶草" },
+          { "emoj": "🍁", "name": "枫叶" },
+          { "emoj": "🍂", "name": "落叶" },
+          { "emoj": "🍃", "name": "树叶在风中飘扬" },
+          { "emoj": "🪹", "name": "空巢" },
+          { "emoj": "🪺", "name": "与蛋筑巢" },
+          { "emoj": "🍄", "name": "蘑菇" }
+        ]
       }
     ]
   }
