@@ -17,14 +17,13 @@ const itemClick = (item: ItemType) => {
 const keyWords = ref('')
 const searchByKeyWords = (keyWords: string) => {
   emojAllItems.value = resetItems()
-  const contents: ItemType[] = emojAllItems.value
-    .filter((item: ItemType) => item.name.includes(keyWords))
-
-  if (contents.length === 0) {
-    emojAllItems.value = resetItems()
-  } else {
-    emojAllItems.value = contents
-  }
+  const contents: ItemType[] = emojAllItems.value.map((tabs: ItemType) => {
+    return tabs.children?.map((types: ItemType) => {
+      return types.children?.filter((item: ItemType) => item.name.includes(keyWords))
+    })
+  })
+  // emojAllItems.value = contents
+  console.log(contents)
 }
 
 watch(
@@ -35,6 +34,9 @@ watch(
     } else {
       emojAllItems.value = resetItems()
     }
+  },
+  {
+    deep: true
   }
 )
 </script>
@@ -43,11 +45,13 @@ watch(
   <div class="layout">
     <div class="flex-column">
       <div v-for="tabs in emojAllItems" :key="tabs.name" class="emoj-tabs">
-        <h3 class="emoj-tabs-title" v-if="tabs.children">{{ tabs.name }}</h3>
-        <div v-for="item in tabs.children" :key="item.name" class="emoj-table">
-          <h3 class="emoj-table-title" v-if="item.children">{{ item.name }}</h3>
+        <h3 class="emoj-tabs-title" v-if="tabs.children?.length > 0">{{ tabs.name }}</h3>
+        <div v-if="tabs.children?.length > 0" v-for="item in tabs.children" :key="item.name" class="emoj-table">
+          <h3 class="emoj-table-title" v-if="item.children?.length > 0">{{ item.name }}</h3>
           <div class="emoj-table-item">
-            <span v-for="emojItem in item.children" :key="emojItem.name">{{ emojItem.emoj }}</span>
+            <span v-if="item.children?.length > 0" v-for="emojItem in item.children" :key="emojItem.name">
+              {{  emojItem.emoj }}
+            </span>
           </div>
         </div>
       </div>
@@ -111,6 +115,8 @@ watch(
 }
 
 .search-box input {
+  font-size: 20px;
+  padding-left: 8px;
   color: #333;
   background: #ccc;
   width: 100%;
@@ -122,11 +128,10 @@ watch(
 }
 
 .search-box input:focus-visible {
-  padding-left: 8px;
   font-size: 20px;
+  padding-left: 8px;
   border: 1px solid #333;
   border-radius: 0 !important;
   outline: none;
 }
 </style>
-../emoj/labor
