@@ -1023,5 +1023,179 @@ export const emojItems: ItemType[] = [
         ]
       }
     ]
+  },
+  {
+    name: '食物与饮料的表情符号',
+    children: [
+      {
+        name: '水果',
+        children: [
+          { "emoj": "🌱", "name": "幼苗" },
+          { "emoj": "🪴", "name": "盆栽" },
+          { "emoj": "🌲", "name": "常青树" },
+          { "emoj": "🌳", "name": "落叶树" },
+          { "emoj": "🌴", "name": "棕榈树" },
+          { "emoj": "🌵", "name": "仙人掌" },
+          { "emoj": "🌾", "name": "一捆米饭" },
+          { "emoj": "🌿", "name": "草本植物" },
+          { "emoj": "☘️", "name": "三叶草" },
+          { "emoj": "☘", "name": "三叶草" },
+          { "emoj": "🍀", "name": "四叶草" },
+          { "emoj": "🍁", "name": "枫叶" },
+          { "emoj": "🍂", "name": "落叶" },
+          { "emoj": "🍃", "name": "树叶在风中飘扬" },
+          { "emoj": "🪹", "name": "空巢" },
+          { "emoj": "🪺", "name": "与蛋筑巢" },
+          { "emoj": "🍄", "name": "蘑菇" }
+        ]
+      },
+      {
+        name: '蔬菜',
+        children: [
+          { "emoj": "🌱", "name": "幼苗" },
+          { "emoj": "🪴", "name": "盆栽" },
+          { "emoj": "🌲", "name": "常青树" },
+          { "emoj": "🌳", "name": "落叶树" },
+          { "emoj": "🌴", "name": "棕榈树" },
+          { "emoj": "🌵", "name": "仙人掌" },
+          { "emoj": "🌾", "name": "一捆米饭" },
+          { "emoj": "🌿", "name": "草本植物" },
+          { "emoj": "☘️", "name": "三叶草" },
+          { "emoj": "☘", "name": "三叶草" },
+          { "emoj": "🍀", "name": "四叶草" },
+          { "emoj": "🍁", "name": "枫叶" },
+          { "emoj": "🍂", "name": "落叶" },
+          { "emoj": "🍃", "name": "树叶在风中飘扬" },
+          { "emoj": "🪹", "name": "空巢" },
+          { "emoj": "🪺", "name": "与蛋筑巢" },
+          { "emoj": "🍄", "name": "蘑菇" }
+        ]
+      },
+      {
+        name: '加工食品',
+        children: [
+          { "emoj": "🍞", "name": "面包" },
+          { "emoj": "🥐", "name": "羊角面包" },
+          { "emoj": "🥖", "name": "长棍面包" },
+          { "emoj": "🫓", "name": "大饼" },
+          { "emoj": "🥨", "name": "椒盐卷饼" },
+          { "emoj": "🥯", "name": "百吉饼" },
+          { "emoj": "🥞", "name": "薄煎饼" },
+          { "emoj": "🧇", "name": "胡扯" },
+          { "emoj": "🧀", "name": "奶酪角" },
+          { "emoj": "🍖", "name": "骨头上的肉" },
+          { "emoj": "🍗", "name": "家禽腿" },
+          { "emoj": "🥩", "name": "切肉" },
+          { "emoj": "🥓", "name": "熏肉" },
+          { "emoj": "🍔", "name": "汉堡包" },
+          { "emoj": "🍟", "name": "炸薯条" },
+          { "emoj": "🍕", "name": "比萨" },
+          { "emoj": "🌭", "name": "热狗" },
+          { "emoj": "🥪", "name": "三明治" },
+          { "emoj": "🌮", "name": "炸玉米饼" },
+          { "emoj": "🌯", "name": "墨西哥卷饼" },
+          { "emoj": "🫔", "name": "塔马利" },
+          { "emoj": "🥙", "name": "酿大饼" },
+          { "emoj": "🧆", "name": "沙拉三明治" },
+          { "emoj": "🥚", "name": "蛋" },
+          { "emoj": "🍳", "name": "烹饪" },
+          { "emoj": "🥘", "name": "浅盘食物" },
+          { "emoj": "🍲", "name": "一锅食物" },
+          { "emoj": "🫕", "name": "火锅" },
+          { "emoj": "🥣", "name": "带勺子的碗" },
+          { "emoj": "🥗", "name": "绿色的沙拉" },
+          { "emoj": "🍿", "name": "爆米花" },
+          { "emoj": "🧈", "name": "黄油" }
+        ]
+      },
+      {
+        name: '亚洲食品',
+        children: [
+          { "emoj": "🍱", "name": "便当盒" },
+          { "emoj": "🍘", "name": "米果" },
+          { "emoj": "🍙", "name": "饭团" },
+          { "emoj": "🍚", "name": "熟米饭" },
+          { "emoj": "🍛", "name": "咖喱饭" },
+          { "emoj": "🍜", "name": "蒸碗" },
+          { "emoj": "🍝", "name": "意大利细面条" },
+          { "emoj": "🍠", "name": "烤红薯" },
+          { "emoj": "🍢", "name": "奥登" },
+          { "emoj": "🍣", "name": "寿司" },
+          { "emoj": "🍤", "name": "炒虾仁" },
+          { "emoj": "🍥", "name": "带漩涡的鱼饼" },
+          { "emoj": "🥮", "name": "月饼" },
+          { "emoj": "🍡", "name": "团子" },
+          { "emoj": "🥟", "name": "饺子" },
+          { "emoj": "🥠", "name": "幸运饼干" },
+          { "emoj": "🥡", "name": "外卖盒" }
+        ]
+      },
+      {
+        name: '海鲜',
+        children: [
+          { "emoj": "🦀", "name": "螃蟹" },
+          { "emoj": "🦞", "name": "龙虾" },
+          { "emoj": "🦐", "name": "虾" },
+          { "emoj": "🦑", "name": "乌贼" },
+          { "emoj": "🦪", "name": "牡蛎" }
+        ]
+      },
+      {
+        name: '甜食',
+        children: [
+          { "emoj": "🍦", "name": "软冰淇淋" },
+          { "emoj": "🍧", "name": "刨冰" },
+          { "emoj": "🍨", "name": "冰淇淋" },
+          { "emoj": "🍩", "name": "油炸圈饼" },
+          { "emoj": "🍪", "name": "曲奇饼" },
+          { "emoj": "🎂", "name": "生日蛋糕" },
+          { "emoj": "🍰", "name": "脆饼" },
+          { "emoj": "🧁", "name": "纸杯蛋糕" },
+          { "emoj": "🥧", "name": "馅饼" },
+          { "emoj": "🍫", "name": "巧克力吧" },
+          { "emoj": "🍬", "name": "糖果" },
+          { "emoj": "🍭", "name": "棒糖" },
+          { "emoj": "🍮", "name": "卡仕达酱" },
+          { "emoj": "🍯", "name": "蜜罐" }
+        ]
+      },
+      {
+        name: '饮料',
+        children: [
+          { "emoj": "🍼", "name": "婴儿奶瓶" },
+          { "emoj": "🥛", "name": "一杯牛奶" },
+          { "emoj": "☕", "name": "热饮" },
+          { "emoj": "🫖", "name": "茶壶" },
+          { "emoj": "🍵", "name": "没有把手的茶杯" },
+          { "emoj": "🍶", "name": "清酒" },
+          { "emoj": "🍾", "name": "软木塞爆开的瓶子" },
+          { "emoj": "🍷", "name": "红酒杯" },
+          { "emoj": "🍸", "name": "鸡尾酒杯" },
+          { "emoj": "🍹", "name": "热带饮料" },
+          { "emoj": "🍺", "name": "啤酒杯" },
+          { "emoj": "🍻", "name": "叮当作响的啤酒杯" },
+          { "emoj": "🥂", "name": "叮当作响的眼镜" },
+          { "emoj": "🥃", "name": "玻璃杯" },
+          { "emoj": "🫗", "name": "倾倒液体" },
+          { "emoj": "🥤", "name": "带吸管的杯子" },
+          { "emoj": "🧋", "name": "珍珠奶茶" },
+          { "emoj": "🧃", "name": "饮料盒" },
+          { "emoj": "🧉", "name": "伴侣" },
+          { "emoj": "🧊", "name": "冰" }
+        ]
+      },
+      {
+        name: '餐具',
+        children: [
+          { "emoj": "🥢", "name": "筷子" },
+          { "emoj": "🍽️", "name": "带盘子的叉子和刀子" },
+          { "emoj": "🍴", "name": "刀叉" },
+          { "emoj": "🥄", "name": "勺子" },
+          { "emoj": "🔪", "name": "菜刀" },
+          { "emoj": "🫙", "name": "罐" },
+          { "emoj": "🏺", "name": "双耳瓶" }
+        ]
+      }
+    ]
   }
 ]
