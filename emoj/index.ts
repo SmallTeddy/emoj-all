@@ -68,7 +68,6 @@ export const emojItems: ItemType[] = [
       { emoj: '😶', name: '没有嘴的脸' },
       { emoj: '🫥', name: '虚线面' },
       { emoj: '😶‍🌫️', name: '云中的脸' },
-      { emoj: '😶‍🌫', name: '云中的脸' },
       { emoj: '😏', name: '傻笑的脸' },
       { emoj: '😒', name: '不高兴的脸' },
       { emoj: '🙄', name: '翻白眼的脸' },
@@ -166,6 +165,73 @@ export const emojItems: ItemType[] = [
       { emoj: '💀', name: '颅骨' },
       { emoj: '☠️', name: '骷髅和交叉骨' },
       { emoj: '☠', name: '骷髅和交叉骨' },
+    ]
+  },
+  {
+    name: '脸与服装',
+    children: [
+      { emoj: '💩', name: '一堆便便' },
+      { emoj: '🤡', name: '小丑脸' },
+      { emoj: '👹', name: '食人魔' },
+      { emoj: '👺', name: '妖精' },
+      { emoj: '👻', name: '鬼' },
+      { emoj: '👽', name: '外星人' },
+      { emoj: '👾', name: '外星怪物' },
+      { emoj: '🤖', name: '机器人' },
+    ]
+  },
+  {
+    name: '猫与脸',
+    children: [
+      { emoj: '😺', name: '咧着嘴笑的猫' },
+      { emoj: '😸', name: '微笑的猫，带着微笑的眼睛' },
+      { emoj: '😹', name: '猫流着喜悦的泪水' },
+      { emoj: '😻', name: '心形眼睛微笑的猫' },
+      { emoj: '😼', name: '苦笑的猫' },
+      { emoj: '😽', name: '接吻猫' },
+      { emoj: '🙀', name: '疲倦的猫' },
+      { emoj: '😿', name: '哭泣的猫' },
+      { emoj: '😾', name: '撅嘴的猫' },
+    ]
+  },
+  {
+    name: '猴与脸',
+    children: [
+      { emoj: '🙈', name: '无恶不作的猴子' },
+      { emoj: '🙉', name: '不闻不问的猴子' },
+      { emoj: '🙊', name: '不说邪恶的猴子' },
+    ]
+  },
+  {
+    name: '心形',
+    children: [
+      { emoj: '💌', name: '爱情信' },
+      { emoj: '💘', name: '带箭头的心' },
+      { emoj: '💝', name: '带丝带的心' },
+      { emoj: '💖', name: '闪闪发光的心' },
+      { emoj: '💗', name: '成长的心' },
+      { emoj: '💓', name: '跳动的心' },
+      { emoj: '💞', name: '旋转的心' },
+      { emoj: '💕', name: '两颗心' },
+      { emoj: '💟', name: '心形装饰' },
+      { emoj: '❣️', name: '心中感叹' },
+      { emoj: '❣', name: '心中感叹' },
+      { emoj: '💔', name: '破碎的心' },
+      { emoj: '❤️‍🔥', name: '心脏着火' },
+      { emoj: '❤️‍🩹', name: '修补心' },
+      { emoj: '❤️', name: '红心' },
+      { emoj: '❤', name: '红心' },
+      { emoj: '🩷', name: '粉红色的心' },
+      { emoj: '🧡', name: '橙色的心' },
+      { emoj: '💛', name: '黄心' },
+      { emoj: '💚', name: '绿心' },
+      { emoj: '💙', name: '蓝色的心' },
+      { emoj: '🩵', name: '淡蓝色的心' },
+      { emoj: '💜', name: '紫心的心' },
+      { emoj: '🤎', name: '棕色的心' },
+      { emoj: '🖤', name: '黑心' },
+      { emoj: '🩶', name: '灰色的心' },
+      { emoj: '🤍', name: '白心' },
     ]
   }
 ]
