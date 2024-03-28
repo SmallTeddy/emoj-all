@@ -42,10 +42,13 @@ watch(
 <template>
   <div class="layout">
     <div class="flex-column">
-      <div v-for="item in emojAllItems" :key="item.name" class="emoj-table">
-        <h3 class="emoj-table-title" v-if="item.children">{{ item.name }}</h3>
-        <div class="emoj-table-item">
-          <span v-for="emojItem in item.children" :key="emojItem.name">{{ emojItem.emoj }}</span>
+      <div v-for="tabs in emojAllItems" :key="tabs.name" class="emoj-tabs">
+        <h3 class="emoj-tabs-title" v-if="tabs.children">{{ tabs.name }}</h3>
+        <div v-for="item in tabs.children" :key="item.name" class="emoj-table">
+          <h3 class="emoj-table-title" v-if="item.children">{{ item.name }}</h3>
+          <div class="emoj-table-item">
+            <span v-for="emojItem in item.children" :key="emojItem.name">{{ emojItem.emoj }}</span>
+          </div>
         </div>
       </div>
     </div>
@@ -65,12 +68,14 @@ watch(
   cursor: pointer;
 }
 
+.emoj-tabs,
 .emoj-table {
   box-sizing: border-box;
   width: 100%;
   border-bottom: 1px solid #141414;
 }
 
+.emoj-tabs-title,
 .emoj-table-title {
   color: #e6eaf2;
   text-align: center;
