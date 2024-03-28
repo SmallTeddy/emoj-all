@@ -59,7 +59,6 @@ watch(
 .layout {
   background: #333;
   width: 600px;
-  height: 100vh;
   position: relative;
   z-index: 0;
   padding-bottom: 32px;
