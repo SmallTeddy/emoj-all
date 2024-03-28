@@ -115,13 +115,12 @@ watch(
 }
 
 .search-box input {
+  text-align: center;
   font-size: 20px;
-  padding-left: 8px;
   color: #333;
   background: #ccc;
   width: 100%;
   margin: 0;
-  padding: 0;
   height: 32px;
   border: 1px solid #333;
   border-radius: 0;
@@ -129,7 +128,6 @@ watch(
 
 .search-box input:focus-visible {
   font-size: 20px;
-  padding-left: 8px;
   border: 1px solid #333;
   border-radius: 0 !important;
   outline: none;
