@@ -474,7 +474,68 @@ export const emojItems: ItemType[] = [
           { emoj: '🤝🏾', name: '握手 中黑肤色' },
           { emoj: '🤝🏿', name: '握手 深色肤色' },
         ]
+      },
+      {
+        name: '手与道具',
+        children: [
+          { emoj: '✍️', name: '写字的手' },
+          { emoj: '✍🏻', name: '写字的手 浅肤色' },
+          { emoj: '✍🏼', name: '写字的手 中浅肤色' },
+          { emoj: '✍🏽', name: '写字的手 中等肤色' },
+          { emoj: '✍🏾', name: '写字的手 中黑肤色' },
+          { emoj: '✍🏿', name: '写字的手 深色肤色' },
+          { emoj: '💅', name: '指甲油' },
+          { emoj: '💅🏻', name: '指甲油 浅肤色' },
+          { emoj: '💅🏼', name: '指甲油 中浅肤色' },
+          { emoj: '💅🏽', name: '指甲油 中等肤色' },
+          { emoj: '💅🏾', name: '指甲油 中黑肤色' },
+          { emoj: '💅🏿', name: '指甲油 深色肤色' },
+          { emoj: '🤳', name: '自拍' },
+          { emoj: '🤳🏻', name: '自拍 浅肤色' },
+          { emoj: '🤳🏼', name: '自拍 中浅肤色' },
+          { emoj: '🤳🏽', name: '自拍 中等肤色' },
+          { emoj: '🤳🏾', name: '自拍 中黑肤色' },
+          { emoj: '🤳🏿', name: '自拍 深色肤色' },
+        ]
+      },
+      {
+        name: '身体与部位',
+        children: [
+          { emoj: '💪', name: '弯曲的二头肌' },
+          { emoj: '💪🏻', name: '弯曲的二头肌 浅肤色' },
+          { emoj: '💪🏼', name: '弯曲的二头肌 中浅肤色' },
+          { emoj: '💪🏽', name: '弯曲的二头肌 中等肤色' },
+          { emoj: '💪🏾', name: '弯曲的二头肌 中黑肤色' },
+          { emoj: '💪🏿', name: '弯曲的二头肌 深色肤色' },
+          { emoj: '🦾', name: '机械臂' },
+          { emoj: '🦿', name: '机械腿' },
+          { emoj: '🦵', name: '腿' },
+          { emoj: '🦵🏻', name: '腿 浅肤色' },
+          { emoj: '🦵🏼', name: '腿 中浅肤色' },
+          { emoj: '🦵🏽', name: '腿 中等肤色' },
+          { emoj: '🦵🏾', name: '腿 中黑肤色' },
+          { emoj: '🦵🏿', name: '腿 深色肤色' },
+          { emoj: '🦶', name: '脚' },
+          { emoj: '🦶🏻', name: '脚 浅肤色' },
+          { emoj: '🦶🏼', name: '脚 中浅肤色' },
+          { emoj: '🦶🏽', name: '脚 中等肤色' },
+          { emoj: '🦶🏾', name: '脚 中黑肤色' },
+          { emoj: '🦶🏿', name: '脚 深色肤色' },
+          { emoj: '👂', name: '耳朵' },
+          { emoj: '👂🏻', name: '耳朵 浅肤色' },
+          { emoj: '👂🏼', name: '耳朵 中浅肤色' },
+          { emoj: '👂🏽', name: '耳朵 中等肤色' },
+          { emoj: '👂🏾', name: '耳朵 中黑肤色' },
+          { emoj: '👂🏿', name: '耳朵 深色肤色' },
+          { emoj: '🦻', name: '带助听器的耳朵' },
+          { emoj: '🦻🏻', name: '带助听器的耳朵 浅肤色' },
+          { emoj: '🦻🏼', name: '带助听器的耳朵 中浅肤色' },
+          { emoj: '🦻🏽', name: '带助听器的耳朵 中等肤色' },
+          { emoj: '🦻🏾', name: '带助听器的耳朵 中黑肤色' },
+          { emoj: '🦻🏿', name: '带助听器的耳朵 深色肤色' },
+        ]
       }
     ]
   }
 ]
+
