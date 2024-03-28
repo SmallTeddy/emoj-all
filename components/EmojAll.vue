@@ -73,20 +73,26 @@ watch(
 }
 
 .emoj-table-title {
+  color: #e6eaf2;
   text-align: center;
 }
 
 .emoj-table-item {
   width: 100%;
+  padding-bottom: 4px;
   text-align: center;
 }
 
 .emoj-table-item span {
-  padding: 0 4px;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  padding: 4px;
   font-size: 24px;
 }
 
 .emoj-table-item span:hover {
+  border-radius: 4px;
   box-shadow: 0px 0px 12px #141414;
 }
 
@@ -94,13 +100,15 @@ watch(
   position: fixed;
   bottom: 0;
   z-index: 1;
-  background: #fff;
+  background: #e6eaf2;
   width: 100%;
   height: 32px;
   padding-bottom: 1px;
 }
 
 .search-box input {
+  color: #333;
+  background: #ccc;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -110,7 +118,7 @@ watch(
 }
 
 .search-box input:focus-visible {
-  padding-left: 4px;
+  padding-left: 8px;
   font-size: 20px;
   border: 1px solid #333;
   border-radius: 0 !important;
