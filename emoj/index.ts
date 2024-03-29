@@ -1274,7 +1274,61 @@ export const emojItems: ItemType[] = [
       },
       {
         name: '其他地点',
-        children: []
+        children: [
+          { "emoj": "⛲", "name": "喷泉" },
+          { "emoj": "⛺", "name": "帐篷" },
+          { "emoj": "🌁", "name": "有雾" },
+          { "emoj": "🌃", "name": "有星星的夜晚" },
+          { "emoj": "🏙️", "name": "城市景观" },
+          { "emoj": "🌄", "name": "山上的日出" },
+          { "emoj": "🌅", "name": "日出" },
+          { "emoj": "🌆", "name": "黄昏时的城市景观" },
+          { "emoj": "🌇", "name": "日落" },
+          { "emoj": "🌉", "name": "晚上的桥" },
+          { "emoj": "♨️", "name": "温泉" },
+          { "emoj": "🎠", "name": "旋转木马" },
+          { "emoj": "🛝", "name": "游乐场滑梯" },
+          { "emoj": "🎡", "name": "摩天轮" },
+          { "emoj": "🎢", "name": "过山车" },
+          { "emoj": "💈", "name": "理发店招牌" },
+          { "emoj": "🎪", "name": "马戏团帐篷" }
+        ]
+      },
+      {
+        name: '陆地交通工具',
+        children: [
+          { "emoj": "🚂", "name": "机车" },
+          { "emoj": "🚃", "name": "火车车厢" },
+          { "emoj": "🚄", "name": "高速火车" },
+          { "emoj": "🚅", "name": "子弹头列车" },
+          { "emoj": "🚆", "name": "火车" },
+          { "emoj": "🚇", "name": "地铁" },
+          { "emoj": "🚈", "name": "轻轨" },
+          { "emoj": "🚉", "name": "车站" },
+          { "emoj": "🚊", "name": "电车" },
+          { "emoj": "🚝", "name": "单轨铁路" },
+          { "emoj": "🚞", "name": "山区铁路" },
+          { "emoj": "🚋", "name": "有轨电车" },
+          { "emoj": "🚌", "name": "公共汽车" },
+          { "emoj": "🚍", "name": "迎面而来的巴士" },
+          { "emoj": "🚎", "name": "电车" },
+          { "emoj": "🚐", "name": "小巴" },
+          { "emoj": "🚑", "name": "救护车" },
+          { "emoj": "🚒", "name": "消防车" },
+          { "emoj": "🚓", "name": "警车" },
+          { "emoj": "🚔", "name": "迎面而来的警车" },
+          { "emoj": "🚕", "name": "出租车" },
+          { "emoj": "🚖", "name": "迎面而来的出租车" },
+          { "emoj": "🚗", "name": "汽车" },
+          { "emoj": "🚘", "name": "迎面而来的汽车" },
+          { "emoj": "🚙", "name": "运动型多用途车" },
+          { "emoj": "🛻", "name": "皮卡车" },
+          { "emoj": "🚚", "name": "送货卡车" },
+          { "emoj": "🚛", "name": "铰接式货车" },
+          { "emoj": "🚜", "name": "拖拉机" },
+          { "emoj": "🏎️", "name": "赛车" },
+          { "emoj": "🏍️", "name": "摩托车" }
+        ]
       }
     ]
   }
