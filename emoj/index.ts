@@ -1329,6 +1329,131 @@ export const emojItems: ItemType[] = [
           { "emoj": "🏎️", "name": "赛车" },
           { "emoj": "🏍️", "name": "摩托车" }
         ]
+      },
+      {
+        name: '水上交通工具',
+        children: [
+          { "emoj": "⚓", "name": "锚" },
+          { "emoj": "🛟", "name": "环形浮标" },
+          { "emoj": "⛵", "name": "帆船" },
+          { "emoj": "🛶", "name": "独木舟" },
+          { "emoj": "🚤", "name": "快艇" },
+          { "emoj": "🛳️", "name": "客船" },
+          { "emoj": "⛴️", "name": "渡船" },
+          { "emoj": "🛥️", "name": "摩托艇" },
+          { "emoj": "🚢", "name": "船" }
+        ]
+      },
+      {
+        name: '空中交通工具',
+        children: [
+          { "emoj": "✈️", "name": "飞机" },
+          { "emoj": "🛫", "name": "飞机起飞" },
+          { "emoj": "🛬", "name": "飞机到达" },
+          { "emoj": "🛩️", "name": "小飞机" },
+          { "emoj": "🪂", "name": "降落伞" },
+          { "emoj": "💺", "name": "座位" },
+          { "emoj": "🚁", "name": "直升机" },
+          { "emoj": "🚟", "name": "悬索铁路" },
+          { "emoj": "🚠", "name": "山地索道" },
+          { "emoj": "🚡", "name": "空中缆车" },
+          { "emoj": "🛰️", "name": "卫星" },
+          { "emoj": "🚀", "name": "火箭" },
+          { "emoj": "🛸", "name": "飞碟" }
+        ]
+      },
+      {
+        name: '酒店',
+        children: [
+          { "emoj": "🛎️", "name": "侍者铃" },
+          { "emoj": "🧳", "name": "行李" }
+        ]
+      },
+      {
+        name: '时间',
+        children: [
+          { "emoj": "⌛", "name": "沙漏完成" },
+          { "emoj": "⏳", "name": "沙漏未完成" },
+          { "emoj": "⌚", "name": "手表" },
+          { "emoj": "⏰", "name": "闹钟" },
+          { "emoj": "⏱️", "name": "跑表" },
+          { "emoj": "⏲️", "name": "定时器时钟" },
+          { "emoj": "🕰️", "name": "壁炉台钟" },
+          { "emoj": "🕛", "name": "12点" },
+          { "emoj": "🕧", "name": "12点半" },
+          { "emoj": "🕐", "name": "1点" },
+          { "emoj": "🕜", "name": "1点半" },
+          { "emoj": "🕑", "name": "2点" },
+          { "emoj": "🕝", "name": "2点半" },
+          { "emoj": "🕒", "name": "3点" },
+          { "emoj": "🕞", "name": "3点半" },
+          { "emoj": "🕓", "name": "4点" },
+          { "emoj": "🕟", "name": "4点半" },
+          { "emoj": "🕔", "name": "5点" },
+          { "emoj": "🕠", "name": "5点半" },
+          { "emoj": "🕕", "name": "6点" },
+          { "emoj": "🕡", "name": "6点半" },
+          { "emoj": "🕖", "name": "7点" },
+          { "emoj": "🕢", "name": "7点半" },
+          { "emoj": "🕗", "name": "8点" },
+          { "emoj": "🕣", "name": "8点半" },
+          { "emoj": "🕘", "name": "9点" },
+          { "emoj": "🕤", "name": "9点半" },
+          { "emoj": "🕙", "name": "10点" },
+          { "emoj": "🕥", "name": "10点半" }
+        ]
+      },
+      {
+        name: '天空与天气',
+        children: [
+          { "emoj": "🌑", "name": "新月" },
+          { "emoj": "🌒", "name": "峨眉月（初亏月）" },
+          { "emoj": "🌓", "name": "上弦月" },
+          { "emoj": "🌔", "name": "盈凸月" },
+          { "emoj": "🌕", "name": "满月" },
+          { "emoj": "🌖", "name": "亏凸月" },
+          { "emoj": "🌗", "name": "下弦月" },
+          { "emoj": "🌘", "name": "残月" },
+          { "emoj": "🌙", "name": "弯弯的月亮" },
+          { "emoj": "🌚", "name": "新月脸" },
+          { "emoj": "🌛", "name": "上弦月脸" },
+          { "emoj": "🌜", "name": "下弦月脸" },
+          { "emoj": "🌡️", "name": "温度计" },
+          { "emoj": "☀️", "name": "太阳" },
+          { "emoj": "🌝", "name": "满月脸" },
+          { "emoj": "🌞", "name": "太阳笑脸" },
+          { "emoj": "🪐", "name": "环行星" },
+          { "emoj": "⭐", "name": "星星" },
+          { "emoj": "🌟", "name": "闪烁的星星" },
+          { "emoj": "🌠", "name": "流星" },
+          { "emoj": "🌌", "name": "银河系" },
+          { "emoj": "☁️", "name": "云" },
+          { "emoj": "⛅", "name": "太阳和云" },
+          { "emoj": "⛈️", "name": "雷雨云" },
+          { "emoj": "🌤️", "name": "阳光穿过小云" },
+          { "emoj": "🌥️", "name": "太阳在大片云后" },
+          { "emoj": "🌦️", "name": "太阳在雨云后" },
+          { "emoj": "🌧️", "name": "下雨的云" },
+          { "emoj": "🌨️", "name": "下雪的云" },
+          { "emoj": "🌩️", "name": "闪电的云" },
+          { "emoj": "🌪️", "name": "龙卷风" },
+          { "emoj": "🌫️", "name": "雾" },
+          { "emoj": "🌬️", "name": "风脸" },
+          { "emoj": "🌀", "name": "漩涡" },
+          { "emoj": "🌈", "name": "彩虹" },
+          { "emoj": "🌂", "name": "折叠伞" },
+          { "emoj": "☂️", "name": "伞" },
+          { "emoj": "☔", "name": "带雨滴的伞" },
+          { "emoj": "⛱️", "name": "沙滩伞" },
+          { "emoj": "⚡", "name": "高压电" },
+          { "emoj": "❄️", "name": "雪花" },
+          { "emoj": "☃️", "name": "雪人" },
+          { "emoj": "⛄", "name": "无雪的雪人" },
+          { "emoj": "☄️", "name": "彗星" },
+          { "emoj": "🔥", "name": "火焰" },
+          { "emoj": "💧", "name": "水滴" },
+          { "emoj": "🌊", "name": "海浪" }
+        ]
       }
     ]
   }
