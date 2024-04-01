@@ -1,7 +1,8 @@
 <script lang="ts" setup>
 import { ref, watch } from 'vue'
-import { ItemType } from '../interface';
-import { emojItems } from '../emoj'
+import { ItemType } from '@/interface';
+import { emojItems } from '@/emoj'
+import { copy } from '@/utils'
 
 const resetItems = () => {
   return JSON.parse(JSON.stringify(emojItems))
@@ -11,7 +12,7 @@ const emojAllItems = ref()
 emojAllItems.value = resetItems()
 
 const itemClick = (item: ItemType) => {
-  console.log('copy')
+  copy(item.emoj!)
 }
 
 const keyWords = ref('')
@@ -62,7 +63,7 @@ watch(
         <div v-for="item in tabs.children" :key="item.name" class="emoj-table">
           <h3 class="emoj-table-title" v-if="item.children?.length > 0">{{ item.name }}</h3>
           <div class="emoj-table-item">
-            <span v-for="emojItem in item.children" :key="emojItem.name">
+            <span v-for="emojItem in item.children" :key="emojItem.name" @click="itemClick(emojItem)">
               {{ emojItem.emoj }}
             </span>
           </div>
