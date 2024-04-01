@@ -1,6 +1,6 @@
 import { ItemType } from '../interface';
 
-export const emojtems: ItemType[] = [
+export const emojItems: ItemType[] = [
   {
     name: '笑脸与情感的表情符号',
     children: [
