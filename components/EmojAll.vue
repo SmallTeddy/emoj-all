@@ -1,45 +1,8 @@
 <script lang="ts" setup>
-import { ref, watch } from 'vue'
+import { ref } from 'vue'
 import { ItemType } from '@/interface';
 import { copy } from '@/utils'
-import { onMounted } from 'vue';
 import emojAllData from '@/emoj/emoj-all.txt?raw'
-
-const resetItems = () => {
-  return null
-}
-
-const emojAllItems = ref()
-emojAllItems.value = resetItems()
-
-const itemClick = (item: ItemType) => {
-  copy(item.emoj!)
-}
-
-const keyWords = ref('')
-const searchByKeyWords = (keyWords: string) => {
-  emojAllItems.value = resetItems()
-  const results: ItemType[] = [];
-  const searchEmojis = (items: ItemType[]) => {
-    items.forEach((item) => {
-      if (item.name.includes(keyWords)) {
-        results.push(item);
-      }
-      if (item.children && item.children.length > 0) {
-        searchEmojis(item.children);
-      }
-    });
-  };
-  searchEmojis(emojAllItems.value);
-  emojAllItems.value = [
-    {
-      name: '',
-      children: [
-        { name: '筛选结果', children: results }
-      ]
-    }
-  ]
-}
 
 function toTitleCase(text: string) {
   return text
@@ -68,13 +31,12 @@ function* getUnicodeEmojiFromText(text: string) {
   }
 }
 
-function getData() {
+function getAllEmojIconData() {
   const categorizedEmojiIds: {
     [category: string]: { [subcategory: string]: Array<string> }
   } = {}
   const categoryStack = []
   for (const { type, value } of getUnicodeEmojiFromText(emojAllData)) {
-    // console.log(type, value)
     switch (type) {
       case 'category': {
         while (categoryStack.length) categoryStack.pop()
@@ -101,117 +63,70 @@ function getData() {
     }
   }
 
-  console.log(categorizedEmojiIds)
+  return categorizedEmojiIds
 }
 
-watch(
-  () => keyWords.value,
-  (keyWords) => {
-    if (keyWords && keyWords.trim().length > 0) {
-      searchByKeyWords(keyWords)
-    } else {
-      emojAllItems.value = resetItems()
-    }
-  },
-  {
-    deep: true
-  }
-)
+const emojAllItems = ref()
+emojAllItems.value = getAllEmojIconData()
 
-onMounted(() => {
-  getData()
-})
+const itemClick = (item: ItemType) => {
+  copy(item.emoj!)
+}
+
+const keyWords = ref('')
+const searchByKeyWords = (keyWords: string) => {
+  emojAllItems.value = getAllEmojIconData()
+  const results: ItemType[] = [];
+  const searchEmojis = (items: ItemType[]) => {
+    items.forEach((item) => {
+      if (item.name.includes(keyWords)) {
+        results.push(item);
+      }
+      if (item.children && item.children.length > 0) {
+        searchEmojis(item.children);
+      }
+    });
+  };
+  searchEmojis(emojAllItems.value);
+  emojAllItems.value = [
+    {
+      name: '',
+      children: [
+        { name: '筛选结果', children: results }
+      ]
+    }
+  ]
+}
 </script>
 
 <template>
   <div class="layout">
-    <div class="flex-column">
-      <div v-for="tabs in emojAllItems" :key="tabs.name" class="emoj-tabs">
-        <h3 class="emoj-tabs-title" v-if="tabs.children?.length > 0">{{ tabs.name }}</h3>
-        <div v-for="item in tabs.children" :key="item.name" class="emoj-table">
-          <h3 class="emoj-table-title" v-if="item.children?.length > 0">{{ item.name }}</h3>
-          <div class="emoj-table-item">
-            <span v-for="emojItem in item.children" :key="emojItem.name" @click="itemClick(emojItem)">
-              {{ emojItem.emoj }}
+    <el-input v-model="keyWords"></el-input>
+    <el-tabs type="border-card" tab-position="bottom">
+      <el-tab-pane v-for="(emojItems, key) in emojAllItems" :label="key">
+        <div class="emoj-items">
+          <span v-for="emojItem in emojItems" class="emoj-item">
+            <span v-for="emoj in emojItem" class="emoj">
+              {{ emoj }}
             </span>
-          </div>
+          </span>
         </div>
-      </div>
-    </div>
-    <div class="search-box flex flex-align">
-      <input type="text" v-model="keyWords" />
-    </div>
+      </el-tab-pane>
+    </el-tabs>
   </div>
 </template>
 
 <style scoped>
 .layout {
-  background: #333;
   width: 600px;
-  position: relative;
-  z-index: 0;
-  padding-bottom: 32px;
-  cursor: pointer;
 }
 
-.emoj-tabs,
-.emoj-table {
-  box-sizing: border-box;
-  width: 100%;
-  border-bottom: 1px solid #141414;
+.emoj-items {
+  height: 200px;
+  overflow-y: auto;
 }
 
-.emoj-tabs-title,
-.emoj-table-title {
-  color: #e6eaf2;
-  text-align: center;
-}
-
-.emoj-table-item {
-  width: 100%;
-  padding-bottom: 4px;
-  text-align: center;
-}
-
-.emoj-table-item span {
-  display: inline-block;
-  width: 28px;
-  height: 28px;
-  padding: 4px;
-  font-size: 24px;
-}
-
-.emoj-table-item span:hover {
-  border-radius: 4px;
-  box-shadow: 0px 0px 12px #141414;
-}
-
-.search-box {
-  position: fixed;
-  bottom: 0;
-  z-index: 1;
-  background: #e6eaf2;
-  width: 100%;
-  height: 32px;
-  padding-bottom: 1px;
-}
-
-.search-box input {
-  text-align: center;
+.emoj {
   font-size: 20px;
-  color: #333;
-  background: #ccc;
-  width: 100%;
-  margin: 0;
-  height: 32px;
-  border: 1px solid #333;
-  border-radius: 0;
-}
-
-.search-box input:focus-visible {
-  font-size: 20px;
-  border: 1px solid #333;
-  border-radius: 0 !important;
-  outline: none;
 }
 </style>
