@@ -1,11 +1,12 @@
 <script lang="ts" setup>
 import { ref, watch } from 'vue'
 import { ItemType } from '@/interface';
-import { emojItems } from '@/emoj'
 import { copy } from '@/utils'
+import { onMounted } from 'vue';
+import emojAllData from '@/emoj/emoj-all.txt?raw'
 
 const resetItems = () => {
-  return JSON.parse(JSON.stringify(emojItems))
+  return null
 }
 
 const emojAllItems = ref()
@@ -40,6 +41,32 @@ const searchByKeyWords = (keyWords: string) => {
   ]
 }
 
+function* getUnicodeEmojiFromText(text: string) {
+  const lines = text.split('\n')
+  for (const line of lines) {
+    if (line.startsWith('@@')) {
+      const value = line.substring(2)
+      yield { type: 'category', value }
+    } else if (line.startsWith('@')) {
+      const value = line.substring(1)
+      yield { type: 'subcategory', value }
+    } else if (line.length) {
+      const value = line
+        .split('\t')[0]
+        .split(' ')
+        .map(_ => String.fromCodePoint(parseInt(_, 16)))
+        .join('')
+      yield { type: 'emoji', value }
+    }
+  }
+}
+
+function getData() {
+  for (const { type, value } of getUnicodeEmojiFromText(emojAllData)) {
+    console.log(type, value)
+  }
+}
+
 watch(
   () => keyWords.value,
   (keyWords) => {
@@ -53,6 +80,10 @@ watch(
     deep: true
   }
 )
+
+onMounted(() => {
+  console.log(getData())
+})
 </script>
 
 <template>
