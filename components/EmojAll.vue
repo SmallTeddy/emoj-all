@@ -41,6 +41,13 @@ const searchByKeyWords = (keyWords: string) => {
   ]
 }
 
+function toTitleCase(text: string) {
+  return text
+    .replace(/-/g, ' ')
+    .replace(/\s+/g, ' ')
+    .replace(/[a-zA-Z]+/g, word => word[0].toUpperCase() + word.slice(1))
+}
+
 function* getUnicodeEmojiFromText(text: string) {
   const lines = text.split('\n')
   for (const line of lines) {
@@ -62,9 +69,39 @@ function* getUnicodeEmojiFromText(text: string) {
 }
 
 function getData() {
+  const categorizedEmojiIds: {
+    [category: string]: { [subcategory: string]: Array<string> }
+  } = {}
+  const categoryStack = []
   for (const { type, value } of getUnicodeEmojiFromText(emojAllData)) {
-    console.log(type, value)
+    // console.log(type, value)
+    switch (type) {
+      case 'category': {
+        while (categoryStack.length) categoryStack.pop()
+        const title = toTitleCase(value)
+        categoryStack.push(title)
+        categorizedEmojiIds[title] = {}
+        break
+      }
+      case 'subcategory': {
+        if (categoryStack.length > 1) categoryStack.pop()
+        const title = toTitleCase(value)
+        categoryStack.push(title)
+        categorizedEmojiIds[categoryStack[0]][title] = []
+        break
+      }
+      case 'emoji': {
+        const key = value.replace(/[\ufe00-\ufe0f\u200d]/g, '')
+        const [category, subcategory] = categoryStack
+        categorizedEmojiIds[category][subcategory].push(key)
+        break
+      }
+      default:
+        throw new Error(`Unexpected type ${JSON.stringify(type)}`)
+    }
   }
+
+  console.log(categorizedEmojiIds)
 }
 
 watch(
@@ -82,7 +119,7 @@ watch(
 )
 
 onMounted(() => {
-  console.log(getData())
+  getData()
 })
 </script>
 
