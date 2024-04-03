@@ -21,7 +21,7 @@ const searchByKeyWords = (keyWords: string) => {
   const results: ItemType[] = [];
   const searchEmojis = (items: ItemType[]) => {
     items.forEach((item) => {
-      if (item.name.includes(keyWords)) {
+      if (item.name.includes(keyWords) && item.emoj) {
         results.push(item);
       }
       if (item.children && item.children.length > 0) {
@@ -30,14 +30,7 @@ const searchByKeyWords = (keyWords: string) => {
     });
   };
   searchEmojis(emojAllItems.value);
-  emojAllItems.value = [
-    {
-      name: '',
-      children: [
-        { name: '筛选结果', children: results }
-      ]
-    }
-  ]
+  emojAllItems.value = [{ name: '筛选结果', children: results }]
 }
 
 watch(
@@ -60,14 +53,9 @@ watch(
     <div class="flex-column">
       <div v-for="tabs in emojAllItems" :key="tabs.name" class="emoj-tabs">
         <h3 class="emoj-tabs-title" v-if="tabs.children?.length > 0">{{ tabs.name }}</h3>
-        <div v-for="item in tabs.children" :key="item.name" class="emoj-table">
-          <h3 class="emoj-table-title" v-if="item.children?.length > 0">{{ item.name }}</h3>
-          <div class="emoj-table-item">
-            <span v-for="emojItem in item.children" :key="emojItem.name" @click="itemClick(emojItem)">
-              {{ emojItem.emoj }}
-            </span>
-          </div>
-        </div>
+        <span v-for="emojItem in tabs.children" :key="emojItem.name" class="emoj-table">
+          <span class="emoj-table-item" @click="itemClick(emojItem)">{{ emojItem.emoj }} </span>
+        </span>
       </div>
     </div>
     <div class="search-box flex flex-align">
@@ -78,7 +66,7 @@ watch(
 
 <style scoped>
 .layout {
-  background: #333;
+  background: #3c3c3c;
   width: 600px;
   position: relative;
   z-index: 0;
@@ -86,8 +74,7 @@ watch(
   cursor: pointer;
 }
 
-.emoj-tabs,
-.emoj-table {
+.emoj-tabs {
   box-sizing: border-box;
   width: 100%;
   border-bottom: 1px solid #141414;
@@ -100,12 +87,6 @@ watch(
 }
 
 .emoj-table-item {
-  width: 100%;
-  padding-bottom: 4px;
-  text-align: center;
-}
-
-.emoj-table-item span {
   display: inline-block;
   width: 28px;
   height: 28px;
@@ -113,7 +94,7 @@ watch(
   font-size: 24px;
 }
 
-.emoj-table-item span:hover {
+.emoj-table-item:hover {
   border-radius: 4px;
   box-shadow: 0px 0px 12px #141414;
 }
@@ -131,18 +112,18 @@ watch(
 .search-box input {
   text-align: center;
   font-size: 20px;
-  color: #333;
+  color: #3c3c3c;
   background: #ccc;
   width: 100%;
   margin: 0;
   height: 32px;
-  border: 1px solid #333;
+  border: 1px solid #3c3c3c;
   border-radius: 0;
 }
 
 .search-box input:focus-visible {
   font-size: 20px;
-  border: 1px solid #333;
+  border: 1px solid #3c3c3c;
   border-radius: 0 !important;
   outline: none;
 }
