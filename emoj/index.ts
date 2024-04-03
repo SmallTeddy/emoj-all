@@ -2,7 +2,8 @@ import { ItemType } from '../interface';
 
 export const emojItems: ItemType[] = [
   {
-    name: '笑脸与情感的表情符号',
+    emoj: '😀',
+    name: '笑脸与情感',
     children: [
       { emoj: '😀', name: '笑脸' },
       { emoj: '😃', name: '笑脸大眼睛' },
@@ -177,7 +178,8 @@ export const emojItems: ItemType[] = [
     ]
   },
   {
-    name: '人物与身体的表情符号',
+    emoj: '👶',
+    name: '人物与身体',
     children: [
       { emoj: '👋', name: '挥手' },
       { emoj: '🤚', name: '举起手背' },
@@ -486,7 +488,8 @@ export const emojItems: ItemType[] = [
     ]
   },
   {
-    name: '零件的表情符号',
+    emoj: '👀',
+    name: '零件',
     children: [
       { emoj: '🏻', name: '浅肤色' },
       { emoj: '🏼', name: '中浅肤色' },
@@ -500,7 +503,8 @@ export const emojItems: ItemType[] = [
     ]
   },
   {
-    name: '动物与自然的表情符号',
+    emoj: '🐵',
+    name: '动物与自然',
     children: [
       { emoj: "🐵", "name": "猴脸" },
       { emoj: "🐒", "name": "猴" },
@@ -1038,7 +1042,8 @@ export const emojItems: ItemType[] = [
     ]
   },
   {
-    name: '物品的表情符号',
+    emoj: '🎭',
+    name: '物品',
     children: [
       { emoj: "👓", "name": "眼镜" },
       { emoj: "🕶️", "name": "太阳镜" },
@@ -1291,7 +1296,8 @@ export const emojItems: ItemType[] = [
     ]
   },
   {
-    name: '符号的表情符号',
+    emoj: '🏷️',
+    name: '符号',
     children: [
       { emoj: "🏧", "name": "自动取款机标志" },
       { emoj: "🚮", "name": "垃圾桶标志，意为丢弃垃圾在此" },
@@ -1557,7 +1563,8 @@ export const emojItems: ItemType[] = [
     ]
   },
   {
-    name: '旗帜的表情符号',
+    emoj: '🚩',
+    name: '旗帜',
     children: [
       { emoj: "🏁", "name": "方格旗，常用于赛车比赛终点或其他竞赛活动" },
       { emoj: "🚩", "name": "三角旗，指路标志或用于指示地点" },
