@@ -106,6 +106,7 @@ watch(
 
 .emoj-table-item:hover {
   border-radius: 4px;
+  background: #ccc;
   box-shadow: 0px 0px 12px #141414;
 }
 </style>
