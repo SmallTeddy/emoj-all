@@ -56,7 +56,7 @@ watch(
     <el-tabs type="border-card" tab-position="bottom">
       <el-tab-pane v-for="tabs in emojAllItems" :key="tabs.name" :label="tabs.emoj">
         <span v-for="emojItem in tabs.children" :key="emojItem.name" class="emoj-table">
-          <span class="emoj-table-item" @click="itemClick(emojItem)">{{ emojItem.emoj }} </span>
+          <span class="emoj-table-item" @click="itemClick(emojItem)"  :title="emojItem.name">{{ emojItem.emoj }} </span>
         </span>
       </el-tab-pane>
     </el-tabs>
