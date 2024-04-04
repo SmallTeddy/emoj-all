@@ -1,3 +1,4 @@
 # todo list
 
-- [ ] 重新布局 emoj
+- [x] 重新布局 emoj
+- [ ] 完善数据
