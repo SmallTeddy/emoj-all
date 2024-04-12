@@ -30,7 +30,8 @@ const searchByKeyWords = (keyWords: string) => {
     });
   };
   searchEmojis(emojAllItems.value);
-  emojAllItems.value = [{name: '筛选结果', children: results}]
+
+  emojAllItems.value = [{emoj: '👓', name: '筛选结果', children: results}]
 }
 
 watch(
